@@ -1,0 +1,80 @@
+{% extends '_layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    {% include '_fragments/Page Header.html' %}
+
+    <!-- Contact Start -->
+    <div class="contact wow fadeInUp">
+                    <div class="container">
+                        <div class="section-header text-center">
+                            <p>Будемо на зв'язку</p>
+                            <h2>Для будь-якого запиту стосовно робіт</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-info">
+                                    <div class="contact-item">
+                                        <i class="flaticon-call"></i>
+                                        <div class="contact-text">
+                                            <h2>Саня</h2>
+                                            <p><a href="mailto:s_chubenko@ukr.net" class="link_header"><span style="color: #FFFFFF;">s_chubenko@ukr.net</span></a></p>
+                                            <p><a href="tel:+380675024306" class="link_header"><span style="color: #FFFFFF;">+38(067) 502-43-06</span></a></p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="flaticon-call"></i>
+                                        <div class="contact-text">
+                                            <h2>Антон</h2>
+                                            <p><a href="tel:+380634467183" class="link_header"><span style="color: #FFFFFF;">+38(063) 446-71-83</span></a></p>
+                                            <p><a href="tel:+380975067964" class="link_header"><span style="color: #FFFFFF;">+38(097) 506-79-64</span></a></p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="flaticon-send-mail"></i>
+                                        <div class="contact-text">
+                                            <h2>Електронна пошта </h2>
+                                            <p><a href="mailto:sanya.anton.painter@gmail.com" class="link_header"><span style="color: #FFFFFF;">sanya.anton.painter@gmail.com</span></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-form">
+                                    <div id="success"></div>
+                                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                        <div class="control-group">
+                                            <input type="text" class="form-control" id="name" placeholder="Твоє ім'я" required="required" data-validation-required-message="Please enter your name" />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="control-group">
+                                            <input type="email" class="form-control" id="email" placeholder="Ваша електронна адреса" required="required" data-validation-required-message="Please enter your email" />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="control-group">
+                                            <input type="phone" class="form-control" id="phone" placeholder="Ваш номер телефону" required="required" data-validation-required-message="Please enter your phone" />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+
+                                        <div class="control-group">
+                                            <input type="text" class="form-control" id="subject" placeholder="Тема запиту" required="required" data-validation-required-message="Please enter a subject" />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="control-group">
+                                            <textarea class="form-control" id="message" placeholder="Повідомлення" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div>
+                                            <button class="btn" type="submit" id="sendMessageButton">Відправити повідомлення</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <!-- Contact End -->
+
+
+{% endblock content %}
