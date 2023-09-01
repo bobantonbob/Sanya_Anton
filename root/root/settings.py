@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'catalog',
     'home',
     'orders',
+    'contact_form',
+    'form'
+
 ]
 
 MIDDLEWARE = [
@@ -82,6 +85,14 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'sanya.anton.painter@gmail.com'
+EMAIL_HOST_PASSWORD = 'sanya&anton'
+EMAIL_USE_TLS = True
+
 
 
 # Password validation
