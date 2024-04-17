@@ -2385,3 +2385,8 @@ a:focus {
         flex: 50%;
     }
 }
+.form-user {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
